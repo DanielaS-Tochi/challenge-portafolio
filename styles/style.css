@@ -1,8 +1,88 @@
-#sobre-mi img {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  display: block;
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(60, 216, 244, 0.84);
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 70px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.navbar-right li {
+  display: inline;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5%;
+  transition: background-color 0.3s;
+}
+
+.navbar-right a:hover {
+  background-color: #555;
+  box-shadow: 0 4px 8px rgba(60, 216, 244, 0.84);
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  padding: 20px;
+  background-color: #fb9a5a;
+  text-align: center;
+}
+
+footer a i {
+  font-size: 24px;
+  color: #0077b5;
+  transition: color 0.3s;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 10px;
+}
+footer a i:hover {
+  color: #005582;
+  transform: scale(1.2);
 }
