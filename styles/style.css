@@ -71,8 +71,11 @@ footer {
   bottom: 0;
   z-index: 1;
   padding: 20px;
-  background-color: #fb9a5a;
+  background-color: #f3a36e;
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer a i {
@@ -85,4 +88,12 @@ footer a i {
 footer a i:hover {
   color: #005582;
   transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
+  }
+  footer a {
+    margin: 5px;
+  }
 }
