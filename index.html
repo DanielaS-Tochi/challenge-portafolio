@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniela | Web Developer</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="./assets/images/favicon-16x16.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
@@ -16,7 +21,8 @@
     <header>
         <nav class="navbar">
             <div class="navbar-left">
-                <img src="./assets/images/daniela-silvana-tochi.jpg" alt="mi avatar" class="avatar">
+                <img src="./assets/images/daniela-silvana-tochi.jpg" alt="mi avatar" class="avatar"
+                    title="Avatar de Daniela">
             </div>
             <ul class="navbar-right">
                 <li> <a href="#home">Home</a></li>
@@ -29,29 +35,29 @@
             </ul>
         </nav>
     </header>
+    <nav id="burger-nav">
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
 
-    <a href="./DanielaSilvanaTochiCV.pdf" download>Descargar mi CV</a>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li> <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a></li>
+                <li> <a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
+                <li> <a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
+                <li> <a href="#formacion" onclick="toggleMenu()">Formación</a></li>
+                <li> <a href="#CV" onclick="toggleMenu()">Mi CV</a></li>
+                <li> <a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <a href="./assets/DanielaSilvanaTochiCV.pdf" download>Descargar mi CV</a>
     </section>
-
-
-
-    <footer>
-        <p>&copy; 2024 | Mi portafolio | Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:danielastochi@gmail.com">danielastochi@gmail.com</a></p>
-        <a href="https://linkedin.com/in/daniela-silvana-tochi" target="_blank" rel="noopener" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-            <span class="sr-only">LinkedIn</span></a>
-        <a href="https://github.com/DanielaS-Tochi" target="_blank" rel="noopener" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/DaniTochiCode" target="_blank" rel="noopener" title="Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <!--Por el momento no utilizaré Términos de uso y Política de privacidad-->
-        <!-- <p><a href="/legal">Términos de uso</a> | <a href="/privacy">Política de privacidad</a></p> -->
-
-    </footer>
-    <script src="./scripts/app.js"></script>
 
     <div class="container-formacion" id="Formación">
         <h2 class="heading">Formación académica</h2>
@@ -62,17 +68,32 @@
                 <p>2024-UFPR</p>
             </div>
             <div class="box">
-                <img src="" alt="Logo de Agencia de Habilidades para el Futuro">
-                <h3>Fullstack JavaScript con NodeJS</h3>
-                <p>2022-2023</p>
+                <img src="./assets/images/logo-ahf.png" alt="Logo de Agencia de Habilidades para el Futuro">
+                <h3>Fullstack JavaScript con NodeJS | 2022-2023</h3>
             </div>
-            <div class="box">
-                <img src="" alt="Logo de Agencia de Habilidades para el Futuro">
-                <h3>Programación Inicial</h3>
-                <p>2021</p>
-            </div>
+            <h3>Programación Inicial | 2021</h3>
         </div>
     </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 | Mi portafolio | Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:danielastochi@gmail.com" title="Enviar mail">danielastochi@gmail.com</a></p>
+        <a href="https://linkedin.com/in/daniela-silvana-tochi" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        <a href="https://github.com/DanielaS-Tochi" target="_blank" rel="noopener" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/DaniTochiCode" target="_blank" rel="noopener" title="Twitter / X">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <!--Por el momento no utilizaré Términos de uso y Política de privacidad-->
+        <!-- <p><a href="/legal">Términos de uso</a> | <a href="/privacy">Política de privacidad</a></p> -->
+
+    </footer>
+    <script src="./scripts/app.js"></script>
+
 
 </body>
 
