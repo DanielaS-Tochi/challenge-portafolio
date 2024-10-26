@@ -24,43 +24,32 @@
                 <img src="./assets/images/daniela-silvana-tochi.jpg" alt="mi avatar" class="avatar"
                     title="Avatar de Daniela">
             </div>
+            <!-- Menú de navegación principal -->
             <ul class="navbar-right">
-                <li> <a href="#home">Home</a></li>
-                <li> <a href="#sobre-mi">Sobre mí</a></li>
-                <li> <a href="#habilidades">Habilidades</a></li>
-                <li> <a href="#proyectos">Proyectos</a></li>
-                <li> <a href="#formacion">Formación</a></li>
-                <li> <a href="#CV">Mi CV</a></li>
-                <li> <a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#CV">Mi CV</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
-    <nav id="burger-nav">
-        <div class="burger-menu">
+            <!-- Ícono del menú burger -->
             <div class="burger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-
             </div>
-            <div class="menu-links">
-                <li> <a href="#home" onclick="toggleMenu()">Home</a></li>
-                <li> <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a></li>
-                <li> <a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
-                <li> <a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
-                <li> <a href="#formacion" onclick="toggleMenu()">Formación</a></li>
-                <li> <a href="#CV" onclick="toggleMenu()">Mi CV</a></li>
-                <li> <a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+        </nav>
+    </header>
 
-            </div>
-        </div>
+    </div>
     </nav>
 
-    <a href="./assets/DanielaSilvanaTochiCV.pdf" download>Descargar mi CV</a>
+    <a class="cv" href="./assets/DanielaSilvanaTochiCV.pdf" download>Descargar mi CV</a>
     </section>
+    <h2 class="heading">Formación académica</h2>
+    <div class="container-formacion" id="formacion">
 
-    <div class="container-formacion" id="Formación">
-        <h2 class="heading">Formación académica</h2>
         <div class="box-container">
             <div class="box">
                 <img src="./assets/images/logo-alura.png" alt="Logo de Alura-Latam">
@@ -76,7 +65,7 @@
     </div>
     </div>
     <form action="https://formspree.io/f/xnnqnepn" method="POST">
-        <h1>Contáctame</h1>
+        <h1>---Contáctame---</h1>
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" required>
 
@@ -88,7 +77,8 @@
 
         <button type="submit">Enviar</button>
     </form>
-
+    <a class="cv" href="./assets/DanielaSilvanaTochiCV.pdf" download>Descargar mi CV</a>
+    </section>
 
     <footer>
         <p>&copy; 2024 | Mi portafolio | Todos los derechos reservados.</p>
