@@ -9,7 +9,7 @@ CSS
 JavaScript
 
 # deploy
+Hecho en GitHub Pages.
 
-Hecho en Github Pages
-Link:
+# link
 https://danielas-tochi.github.io/challenge-portafolio/
