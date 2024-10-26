@@ -7,3 +7,9 @@ Primer versión de mi portafolio, realizado para cumplir con el Challenge de Por
 HTML
 CSS
 JavaScript
+
+# deploy
+
+Hecho en Github Pages
+Link:
+https://danielas-tochi.github.io/challenge-portafolio/
